@@ -1,0 +1,121 @@
+@import '../common.less'; 
+.register{
+	min-height: 100%;
+	.header{
+		background-color: #C00000;
+		.logo{
+			display: inline-block;
+			width: 300px;
+			img{
+				margin-right: 5px;
+				float: left;
+				height: 45px;
+				width: 94px;
+			}
+			b{
+				color: #fff;
+				font-size: 16px;
+			}
+			p{
+				padding-top: 2px;
+				color: rgba(255,255,255,0.8);
+				font-size: 12px;
+			}
+		}
+		span{
+			opacity: 0.8;
+			color: #fff;
+			font-size: 16px;
+			border-left: 1px solid rgba(255,255,255,0.8);
+			display: inline-block;
+			padding-left: 20px;
+		}
+		.back{
+			float: right;
+			color: #fff;
+			font-size: 16px;
+			opacity: 0.8;
+			padding-top: 20px;
+		}
+	}
+	
+	.main{
+		width: 35%;
+		padding: 50px;
+		box-sizing: border-box;
+		margin: 20px auto;
+		background: #FFFFFF;
+		box-shadow: 0px 2px 32px 0px rgba(0, 0, 0, 0.12);
+		border-radius: 4px;
+		margin-bottom: 28vh;
+		.b{
+			color: #F7B500;
+			font-size: 22px;
+			font-weight: 600;
+			display: block;
+			padding-bottom: 20px;
+		}
+		.f{
+			li{
+				margin-bottom: 20px;
+				position: relative;
+				padding-left: 90px;
+				box-sizing: border-box;
+				span{
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					color: #797979;
+					font-size: 16px;
+					width: 90px;
+				}
+				input{
+					display: block;
+					outline: none;
+					width: 90%;
+					border-radius: 3px;
+					border: 1px solid #D7D7D7;
+					padding:8px 10px;
+					box-sizing: border-box;
+				}
+				input::placeholder{
+					font-size: 16px;
+					color: #BFBFBF;
+				}
+				
+			}
+			.dx{
+				input{
+					display: inline-block;
+					width: 49%;
+					box-sizing: border-box;
+				}
+				i{
+					background-color:#E02020;
+					color: rgba(255, 255, 255, 0.8);
+					display: inline-block;
+					cursor: pointer;
+					padding: 8px 10px;
+					border-radius: 5px;
+					width: 40%;
+					box-sizing: border-box;
+					text-align: center;
+				}
+			}
+			
+		}
+		
+		.btn{
+			text-align: center;
+			font-size: 16px;
+			color: #fff;
+			background-color: #F7B500;
+			padding: 12px 0;
+			margin: 50px 0;
+			cursor: pointer;
+		}
+		
+	}
+	
+}

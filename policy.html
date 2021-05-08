@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>政策专栏</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="less/common.css"/>
+		<link rel="stylesheet" type="text/css" href="less/policy/policy.css" />
+		<script src="js/ie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jq-2.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/kkpager.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="policy">
+			<div id="header"></div>
+
+			<div class="g_banner">
+				<img
+					src="images/bgs/zczl.png">
+				<span>政策专栏</span>
+			</div>
+
+
+			<div class="g_tabs">
+				<ul class="global_main clearfix">
+					<li class="active">
+						<span>天津市政策
+							<i></i>
+						</span>
+					</li>
+					<li>
+						<span>天津港保税区政策
+							<i></i>
+						</span>
+					</li>
+					<li>
+						<span>国家产业政策
+							<i></i>
+						</span>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="zc global_main clearfix">
+				<ul class="left">
+					<li class="clearfix">
+						<img src="./images/pol/li.jpg">
+						<div class="r">
+							<b>天津港保税区关于支持企业控疫情稳增长的政策措施</b>
+							<p>
+								为深入贯彻落实习近平总书记对新型冠状病毒感染肺炎疫情防控工作的重要指示精神和党中央、国务院及市委市政府的决策部署，全面落实《天津市打赢新型冠状病毒感染肺炎疫情防控阻击战进一步促进经济社会持续健康发展的
+							</p>
+							<div>
+								<span>
+									发文单位： 天津港保税区
+								</span>
+								<span>
+									<img src="images/pol/ds.jpg">
+									2020-08-31 10:41
+								</span>
+								<span>
+									<img src="images/pol/kan.jpg">
+									33
+								</span>
+							</div>
+						</div>
+					</li>
+					<li class="clearfix">
+						<img src="images/oimg/政策专栏/2.png">
+						<div class="r">
+							<b>天津港保税区关于支持企业控疫情稳增长的政策措施</b>
+							<p>
+								为深入贯彻落实习近平总书记对新型冠状病毒感染肺炎疫情防控工作的重要指示精神和党中央、国务院及市委市政府的决策部署，全面落实《天津市打赢新型冠状病毒感染肺炎疫情防控阻击战进一步促进经济社会持续健康发展的
+							</p>
+							<div>
+								<span>
+									发文单位： 天津港保税区
+								</span>
+								<span>
+									<img src="images/pol/ds.jpg">
+									2020-08-31 10:41
+								</span>
+								<span>
+									<img src="images/pol/kan.jpg">
+									33
+								</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="right">
+					<div class="t">
+						<span>政策解读</span>
+						<a href="policy-more.html">更多</a>
+					</div>
+					<ul class="lis">
+						<li>
+							<b></b>
+							<span>中央一号文件有哪些亮点</span>
+							<i>2021-02-24</i>
+						</li>
+						<li>
+							<b></b>
+							<span>最新政策】两化融合管理体系（升级版）贯标；领军型创新人才引进；市级科技计划项目验收；重点研发计划中期检查；知识产权软科学研究项目</span>
+							<i>2021-02-24</i>
+						</li>
+					</ul>
+					<div class="imgs">
+						<img src="images/index/jj.jpg">
+						<img src="images/index/jj.jpg">
+					</div>
+				</div>
+			</div>
+
+
+
+
+			
+			<div class="g_page" style="padding-bottom: 50px;">
+				<div style="width:800px;margin:0 auto;">
+				<div id="kkpager"></div>
+				</div>
+			</div>
+			
+
+
+
+
+				<div id="fonter"></div>
+			</div>
+
+
+
+
+			<script type="text/javascript" charset="UTF-8">
+				$("#header").load("./template/header.html")
+				$("#fonter").load("./template/fonter.html")
+				
+				//tab
+				$(".g_tabs li").click(function(){
+					$(".g_tabs li").removeClass()
+					$(this).addClass("active")
+				})
+				
+				$(".zc .left li").click(function(){
+					location.href = "policy-datail.html"
+				})
+				
+			</script>
+
+
+			<script type="text/javascript">
+				function getParameter(name) {
+					var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+					var r = window.location.search.substr(1).match(reg);
+					if (r != null) return unescape(r[2]);
+					return null;
+				}
+
+				//init
+				$(function() {
+					var totalPage = 10;
+					var totalRecords = 390;
+					var pageNo = getParameter('pno');
+					if (!pageNo) {
+						pageNo = 1;
+						//原本是实现无刷新跳转，我这是根据自己需求做的有刷新时跳转
+						// 如：www.baidu.com/abcd/index.jhtml
+						/*	let str=window.location.pathname;
+							let two; // 第二个斜杠后内容
+							let first = str.indexOf("/") + 1; 
+							let heng = str.indexOf("/", first);
+							if (heng == -1) {
+								} else {
+								  two = str.substring(heng).substring(1, str.length);
+								}
+							if(two=="index.jhtml"){  
+								pageNo = 1;
+							}else{
+								pageNo = num;//num是根据自己要点击第几页写的
+							}*/
+					}
+					//生成分页
+					//有些参数是可选的，比如lang，若不传有默认值
+					kkpager.generPageHtml({
+						pno: pageNo,
+						//总页码
+						total: totalPage,
+						//总数据条数
+						totalRecords: totalRecords,
+						mode: 'click', //默认值是link，可选link或者click
+						click: function(n) {
+							this.selectPage(n);
+
+							if (n == 1) {
+								//原本是实现无刷新跳转，我这是根据自己需求做的有刷新时跳转
+								//第一页写逻辑跳转
+								// 如：window.location.href=......;
+							} else {
+								//除了第一页写逻辑跳转
+							}
+							return false;
+						}
+
+							,lang: {
+									firstPageText			: '首页',
+									firstPageTipText		: '首页',
+									lastPageText			: '尾页',
+									lastPageTipText			: '尾页',
+									prePageText				: '上一页',
+									prePageTipText			: '上一页',
+									nextPageText			: '下一页',
+									nextPageTipText			: '下一页',
+									totalPageBeforeText		: '共',
+									totalPageAfterText		: '页',
+									currPageBeforeText		: '当前第',
+									currPageAfterText		: '页',
+									totalInfoSplitStr		: '/',
+									totalRecordsBeforeText	: '共',
+									totalRecordsAfterText	: '条数据',
+									gopageBeforeText		: '&nbsp;转到',
+									gopageButtonOkText		: '确定',
+									gopageAfterText			: '页',
+									buttonTipBeforeText		: '第',
+									buttonTipAfterText		: '页'
+								}
+					});
+				});
+			</script>
+
+
+
+
+	</body>
+</html>

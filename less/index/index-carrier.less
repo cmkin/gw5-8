@@ -1,0 +1,133 @@
+@import '../common.less';
+.index-carrier{
+	min-height: 100%;
+	.main{
+		height: 100vh;
+		background: url(../../images/car/bg.png) no-repeat 0 0;
+		background-size: 100% 100%;
+		padding-top: 5vh;
+		box-sizing: border-box;
+		canvas{
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
+		.global_main{
+			padding: 0;
+			height: 95vh;
+			box-sizing: border-box;
+			position: relative;
+			.qiu{
+				position: absolute;
+				width: 80px;
+				height: 80px;
+				cursor: pointer;
+				border-radius: 50%;
+				background: radial-gradient(rgba(16, 30, 88, 0.5) ,rgba(8, 234, 193, 0.3) , rgba(8, 234, 193, 0.5));
+				span{
+					position: absolute;
+					left: 65%;
+					bottom: 12px;
+					font-size: 14px;
+					width: 100%;
+					transform: translateX(-50%);
+					color: rgba(255,255,255,0.8);
+				}
+				i{
+					width: 10px;
+					height: 10px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					background-color: rgba(40, 138, 252, 0.6);
+					border-radius: 50%;
+					&::after{
+						content: '';
+						position: absolute;
+						width: 150%;
+						height: 150%;
+						border: 1px solid rgba(16, 30, 88, 1);
+						top: 50%;
+						transform: translate(-50%,-50%);
+						left: 50%;
+						border-radius: 50%;
+					}
+				}
+			}
+			.card{
+				position: absolute;
+				z-index: 100;
+				top: 0;
+				left: 0;
+				width: 400px;
+				background: url(../../images/index/hbg.png) no-repeat 0 0;
+				background-size: 100% 100%;
+				padding: 20px;
+				display: none;
+				b{
+					display: block;
+					font-size: 18px;
+					color: #fff;
+					padding-bottom: 20px;
+				}
+				p{
+					padding: 20px 0;
+					font-size: 16px;
+					color: rgba(255,255,255,0.8);
+				}
+				.imgs{
+					padding-bottom: 30px;
+					img{
+						float: left;
+						width: 23%;
+						margin-left: 2%;
+						height: 50px;
+					}
+				}
+			}
+			
+			.biaochi{
+				position: absolute;
+				right: 50px;
+				top: 50px;
+				color: #fff;
+				li{
+					margin-bottom: 10px;
+					font-size: 16px;
+					i{
+						display: inline-block;
+						width: 20px;
+						height: 20px;
+						background: rgba(8, 234, 193, 1);
+						border-radius: 3px;
+						position: relative;
+						top: 5px;
+						margin-right: 10px;
+					}
+				}
+				li:nth-child(2){
+					i{
+						opacity: 0.8;
+					}
+				}
+				li:nth-child(3){
+					i{
+						opacity: 0.6;
+					}
+				}
+				li:nth-child(4){
+					i{
+						opacity: 0.5;
+					}
+				}
+				li:nth-child(5){
+					i{
+						opacity: 0.4;
+					}
+				}
+			}
+			
+		}
+	}
+}

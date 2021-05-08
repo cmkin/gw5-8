@@ -1,0 +1,308 @@
+@font-face {
+	font-family: 'mat';
+
+	src: url('../fonts/MaterialIcons-Regular.ttf')
+	/* IE9 */
+
+}
+.swiper-container{
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {
+	margin: 0;
+	padding: 0;
+}
+
+body,
+html {
+	height: 100%;
+	color: #888282;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	background-color: #F5F5F5;
+}
+
+.global_main {
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+@media (max-width:1500px) {
+	.global_main{
+		margin: 0 20px;
+	}
+}
+
+table {
+	border-collapse: collapse;
+}
+
+fieldset,
+img {
+	border: 0 none;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+fieldset p {
+	margin: 0;
+	padding: 0 0 0 8px;
+}
+
+legend {
+	display: none;
+}
+
+address,
+caption,
+em,
+strong,
+th,
+i {
+	font-style: normal;
+}
+
+
+
+
+ol,
+ul {
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+}
+
+caption,
+th {
+	text-align: left;
+}
+
+s {
+	text-decoration: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+	content: '';
+}
+
+
+
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: ' ';
+	clear: both;
+	height: 0;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.omg {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+.swiper-button-prev{
+	background-image: url(../images/jtl.png) !important;
+	width: 30px !important;
+	height: 30px !important;
+	left: -8px !important;
+}
+.swiper-button-next{
+	background-image: url(../images/jtr.png) !important;
+	width: 30px !important;
+	height: 30px !important;
+	right: -8px !important;
+}
+
+
+#kkpager{
+	clear:both;
+	color:#999;
+	padding:5px 0px 5px 0px;
+	font-size:13px;
+}
+#kkpager a{
+	float: left;
+	border: 1px solid #ccc;
+	display: inline;
+	padding: 3px 10px 3px 10px;
+	margin-right: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	cursor: pointer;
+	background: #fff;
+	text-decoration:none;
+	color:#999;
+}
+
+#kkpager span.disabled{
+	float: left;
+	display: inline;
+	padding: 3px 10px 3px 10px;
+	margin-right: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border:1px solid #DFDFDF;
+	background-color:#FFF;
+	color:#DFDFDF;
+}
+#kkpager span.curr{
+	float: left;
+	border: 1px solid #0066FF;
+	display: inline;
+	padding: 3px 10px 3px 10px;
+	margin-right: 5px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background: #1B5CFF;
+	color: #fff;
+}
+#kkpager a:hover{
+	border:1px solid #0066FF; 
+	background-color:#0066FF; 
+	color:#fff;
+}
+#kkpager span.normalsize{
+}
+#kkpager_gopage_wrap{
+	position:relative;
+	left:0px;
+	top:0px;
+}
+#kkpager_btn_go {
+	width:44px;
+	height:24px;
+	border:0px;
+	overflow:hidden;
+	line-height:140%;
+	padding:0px;
+	margin:0px;
+	text-align:center;
+	cursor:pointer;
+	background-color:#4f88e1;
+	color:#FFF;
+	position:absolute;
+	left:0px;
+	*top:2px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	display:none;
+}
+#kkpager_btn_go_input{
+	width:36px;
+	height:21px;
+	color:#999;
+	text-align:center;
+	margin-left:1px;
+	margin-right:1px;
+	border:1px solid #DFDFDF;
+	position:relative;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	left:0px;
+	top:0px;
+	*top:2px;
+	outline:none;
+}
+
+#kkpager_btn_go_input.focus{
+	border-color:#4f88e1;
+}
+
+#kkpager .pageBtnWrap{
+	float:left;
+	left: 27px;
+    position: relative;
+}
+
+#kkpager .infoTextAndGoPageBtnWrap{
+	float:right;
+	right: 27px;
+    position: relative;
+}
+#kkpager .spanDot{
+	float:left;
+	margin-right:5px;
+}
+
+#kkpager .currPageNum{
+	color:#4f88e1;
+}
+
+#kkpager .infoTextAndGoPageBtnWrap{
+	padding-top:5px;
+	font-size: 15px;
+}
+
+#kkpager .totalText{
+	display: none !important;
+}
+#kkpager .infoTextAndGoPageBtnWrap{
+	float: left;
+	right: -30px;
+	top: -5px;
+}

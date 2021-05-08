@@ -1,0 +1,194 @@
+.login {
+  height: 100%;
+  position: relative;
+}
+.login .bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.login .bg2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+.login .logo {
+  padding: 30px 100px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  left: 0;
+}
+.login .logo img {
+  margin-right: 5px;
+  float: left;
+  height: 45px;
+  width: 94px;
+}
+.login .logo b {
+  color: #fff;
+  font-size: 16px;
+}
+.login .logo p {
+  padding-top: 2px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+}
+.login .main {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+.login .main .left {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+.login .main .left i {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 26px;
+  padding-bottom: 40px;
+  position: relative;
+}
+.login .main .left i::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  width: 38px;
+  height: 3px;
+  background: #FFFFFF;
+}
+.login .main .left b {
+  font-size: 26px;
+  opacity: 0.9;
+}
+.login .main .cc {
+  box-shadow: 4px 6px 18px 0px rgba(0, 0, 0, 0.32);
+  width: 400px;
+  float: right;
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 30px;
+}
+.login .main .cc .t {
+  font-size: 20px;
+  font-weight: 600;
+  color: #F7B500;
+  padding: 20px 0;
+  border-bottom: 1px solid #CBCBCB;
+}
+.login .main .cc .t b {
+  display: inline-block;
+  position: relative;
+}
+.login .main .cc .t b::after {
+  content: '';
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  background-color: #F7B500;
+  height: 4px;
+  border-radius: 5px;
+}
+.login .main .cc .f {
+  padding: 20px 0;
+  padding-bottom: 0;
+}
+.login .main .cc .f li {
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #CBCBCB;
+  padding: 10px;
+}
+.login .main .cc .f li img {
+  display: inline-block;
+  height: 22px;
+}
+.login .main .cc .f li input {
+  display: inline-block;
+  width: calc(100% - 50px);
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #666;
+  padding-left: 10px;
+  position: relative;
+  top: -3px;
+}
+.login .main .cc .f li input::placeholder {
+  font-size: 16px;
+  color: #BCBCBC;
+}
+.login .main .cc .cs {
+  padding: 0 10px;
+}
+.login .main .cc .cs li {
+  font-size: 16px;
+  color: #595959;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.login .main .cc .cs li span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+.login .main .cc .cs li span i {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  background-color: #F7B500;
+}
+.login .main .cc .cs li b {
+  float: right;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.login .main .cc .cs .active span {
+  border-color: #F7B500;
+}
+.login .main .cc .cs .active span i {
+  opacity: 1;
+}
+.login .main .cc .btn {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  background-color: #F7B500;
+  padding: 12px 0;
+  margin: 50px 0;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.login .main .cc .reg {
+  text-align: right;
+  font-size: 16px;
+  color: #F7B500;
+  font-weight: 600;
+}
+.login .main .cc .reg a {
+  color: #F7B500;
+}

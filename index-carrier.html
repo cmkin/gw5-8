@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>载体服务</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="less/common.css" />
+		<link rel="stylesheet" type="text/css" href="less/index/index-carrier.css" />
+		<script src="js/ie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jq-2.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="index-carrier">
+			<div id="header"></div>
+
+			<div class="main">
+				<div class="global_main" id="canvasWrap">
+					<canvas id="myCanvas"></canvas>
+					<div class="card">
+						<b>瑞普生物智创谷</b>
+						<p>文字信息文字信息文字信息文字信息文字信息 文字信息文字信息文字信息文字信息文字信息 文字信息文字信息文字信息文字信息文字信息 文字信息</p>
+						<div class="imgs clearfix">
+							<img src="images/index/jj.jpg">
+							<img src="images/index/jj.jpg">
+							<img src="images/index/jj.jpg">
+							<img src="images/index/jj.jpg">
+						</div>
+					</div>
+					
+					<div class="biaochi">
+						<ul>
+							<li>
+								<i></i>
+								<span>融通程度：很高</span>
+							</li>
+							<li>
+								<i></i>
+								<span>融通程度：高</span>
+							</li>
+							<li>
+								<i></i>
+								<span>融通程度：中等</span>
+							</li>
+							<li>
+								<i></i>
+								<span>融通程度：一般</span>
+							</li>
+							<li>
+								<i></i>
+								<span>融通程度：低</span>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+
+
+			<div id="fonter"></div>
+
+			<script type="text/javascript" charset="UTF-8">
+				$("#header").load("./template/header.html")
+				$("#fonter").load("./template/fonter.html")
+
+				//canvas
+
+				var c = document.getElementById("myCanvas");
+				var width = $(c).width()
+				var height = $(c).height()
+				c.width = width
+				c.height = height
+				var ctx = c.getContext("2d");
+
+				var img = new Image()
+				img.src = "images/car/dq.png"
+				img.onload = function() {
+					
+					var img2 = new Image()
+						img2.src = "images/ybg.png"
+						img2.onload = function(){
+							ctx.beginPath()
+							
+							ctx.closePath()
+							ctx.strokeStyle = "rgba(8, 234, 193, 0.7)"
+							// 设置透明度值
+							ctx.fillStyle = "RGBA(8, 51, 87, 0.4)"
+							
+							
+							function RandomNumBoth(Min, Max) {
+							
+								var Range = Max - Min;
+							
+								var Rand = Math.random();
+							
+								var num = Min + Math.round(Rand * Range); //四舍五入
+							
+								return num;
+							
+							}
+							//线条
+							var lineList = []
+							
+											
+							
+							
+							
+							for(var i = 3; i<8; i++){
+								
+								//画线条 ,坐标
+								for(var j = 0; j<3; j++){
+									var center = 55 * i + 10*((i==7?6.5:i) -3)
+										if(i==5){
+											center = 55 * i + 10
+										}
+										if(i==6){
+											center = 55 * i + 22
+										}
+										if(i==7){
+											center = 55 * i + 25
+										}
+									var r = center ;   //圆形半径
+									var hudu = (2*Math.PI / 360) *(-Math.random()*360);   //  360/8=45,即45度(这个随个人设置)
+									var X = width / 2 - 20  + Math.sin(hudu) * r;    //  95 是圆形中心的坐标X   即定位left 的值
+									var Y = height / 2 + 10 - Math.cos(hudu) * r;    //  95 是圆形中心的坐标Y   即定位top 的值
+										lineList.push([X,Y])
+										
+										ctx.beginPath()
+										ctx.moveTo(X, Y);
+										ctx.lineTo(width / 2 - 40, height / 2 + 20); //设置末端状态
+										ctx.lineWidth = 2; //设置线宽状态
+										ctx.strokeStyle = 'rgba(8, 234, 193, 0.8)'; //设置线的颜色状态
+										ctx.stroke();
+								}
+								
+								
+							}
+							
+							ctx.clearRect(width / 2 - 65, height / 2 - 40, 90, 100);
+							
+							ctx.drawImage(img2, width / 2 -430, height / 2 -400, 820, 820);
+							// 画半透明圆
+							for (var i = 3; i < 8; i++) {
+								
+								ctx.strokeStyle = "rgba(8, 234, 193, 0."+(10-i)+")"
+								ctx.beginPath();
+								var center = 55 * i + 10*((i==7?6.5:i) -3)
+									if(i==5){
+										center = 55 * i + 10
+									}
+									if(i==6){
+										center = 55 * i + 22
+									}
+									if(i==7){
+										center = 55 * i + 25
+									}
+								ctx.arc(width / 2 - 20, height / 2 + 10, center , 0, Math.PI * 2, true);
+								ctx.stroke();
+								//ctx.fill()
+								
+							}
+							
+							//外围宽 420 - 1000 ，外围高 120 - 680
+							
+							
+							
+							//背景
+							ctx.drawImage(img, width / 2 - 145, height / 2 - 210, 300, 350);
+							
+							
+							
+							//正中间文字
+							
+							ctx.font = "15px '微软雅黑'";
+							ctx.fillStyle = "rgba(255,255,255,0.5)";
+							ctx.textAlign = 'center';
+							ctx.fillText("公司名称", width / 2 - 20, height / 2 + 20);
+							
+							//绘制圆球
+											
+							var doms = ''
+							for (var i in lineList) {
+								doms = ''
+								doms = "<div index='" + i + "' class='qiu' style='left:" + (lineList[i][0] - 38) + "px;top:" + (
+									lineList[i][1] - 40) + "px;'>"
+								doms += '<span>公司名称</span>'
+								doms += '<i></i>'
+								doms += "</div>"
+								$("#canvasWrap").append(doms)
+							}
+							
+							$("#canvasWrap .qiu").click(function() {
+								var index = $(this).attr("index")
+							
+								$("#canvasWrap .card").css({
+									left: lineList[index][0] + 'px',
+									top: lineList[index][1] + 50 + 'px',
+								}).fadeIn()
+							})
+							$("#canvasWrap .card").click(function() {
+								$("#canvasWrap .card").fadeOut()
+							})
+							
+							
+							
+						}
+					
+
+
+					
+
+				}
+
+				/* ctx.fillStyle = "red"
+				ctx.strokeStyle  = "red"
+				ctx.beginPath();
+				ctx.arc(95,50,40,0,2*Math.PI);
+				ctx.stroke(); */
+			</script>
+		</div>
+	</body>
+</html>

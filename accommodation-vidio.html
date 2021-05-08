@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>企业融通</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="less/accommodation/accommodation-detail.css"/>
+		<link rel="stylesheet" type="text/css" href="less/common.css"/>
+		<script src="js/ie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jq-2.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="accommodation-detail" style="background-color: #fff;">
+			<div id="header"></div>
+			<div class="g_banner">
+				<img
+					src="images/bgs/qyrt.png">
+				<span>企业融通</span>
+			</div>
+			
+			<div class="g_titles global_main">
+				<span>企业融通></span>
+				<span>资源信息发布></span>
+				<span class="active">详情</span>
+			</div>
+			
+			<div class="global_main">
+				<div class="vi">
+					<img class="b" src="images/oimg/企业融通/2.png" >
+					<img class="play" src="images/pol/play.png" >
+				</div>
+				<div class="t">2020科技金融进孵化器行动</div>
+				<div class="p">项目简介：该公司是一家利用物联网IoT、大数据云计算、AI算法和智能机器人…….该公司是一家利用物联网IoT、大数据云计算、AI算法和智能机器人…….该公司是一家利用物联网IoT、大数据云计算、AI算法和智能机器人…….该公司是一家利用物联网IoT、大数据云计算、AI算法和智能机器人…….该公司是一家利用物联网IoT、大数据云计算、AI算法和智能机器人…….该公司是一家利用物联网IoT、大数据云计算、AI算法和智能机器人…….该公司是一家利用物联网IoT、大数据云计算、AI算法和智能机器人…….</div>
+				<div class="p">举办时间：2020-3-21</div>
+				<div class="p">举办地点：天津保税区</div>
+				<div class="p">联系地址：天津保税区</div>
+				<div class="p">联系人：李某某</div>
+				<div class="p">联系方式：1980808323</div>
+				<div class="kan">
+					<img src="images/pol/kan.jpg" >
+					33
+				</div>
+				
+				<div class="btn">
+					<span>揭榜</span>
+				</div>
+				
+				
+				<div class="alert_ts">
+					<div class="tb">
+						<b>请你留言 <i></i> </b>
+						<img src="images/close.png" >
+					</div>
+					<div class="m">
+						<p class="js">很抱歉，工作日人工时间为：8:30-20:00（节假日8:30-19:00），非人工时间如需帮助请留下您的联系方式及需求，我们将尽快联系并解决您的问题</p>
+						<div class="li">
+							<b>问题描述</b>
+							<textarea rows="10" cols="10"></textarea>
+						</div>
+						<div class="li">
+							<b>电话</b>
+							<input type="text">
+						</div>
+						<div class="an">提交</div>
+					</div>
+					
+				</div>
+				
+				
+			</div>
+			
+			
+			
+			
+			<div id="fonter"></div>
+			
+			<script type="text/javascript" charset="UTF-8">
+				$("#header").load("./template/header.html")
+				$("#fonter").load("./template/fonter.html")
+				
+				$(".global_main .btn").click(function(){
+					
+					if($(".global_main .alert_ts").css("display")=="none"){
+						$(".global_main .alert_ts").css("display","block")
+					}else{
+						$(".global_main .alert_ts").css("display","none")
+					}
+				})
+				$(".global_main .alert_ts img").click(function(){
+					$(".global_main .alert_ts").css("display","none")
+				})
+				
+			</script>
+		</div>
+	</body>
+</html>

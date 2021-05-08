@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>企业信息</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="less/common.css"/>
+		<link rel="stylesheet" type="text/css" href="less/talents-detail/talents-detail.css"/>
+		<script src="js/ie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jq-2.1.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="talents-detail">
+			<div id="header"></div>
+			
+			<div class="g_banner">
+				<img
+					src="images/bgs/zcyz.png">
+				<span>招才引智</span>
+			</div>
+			
+			<div class="g_titles global_main">
+				<span>招才引智></span>
+				<span class="active">详情</span>
+			</div>
+			<div class="jss">
+				<div class="global_main">
+					<div class="b">
+						<b>市场总监</b>
+						<i>发布于2月18日</i>
+					</div>
+					<div class="bs">
+						<span>工作地点：天津</span>
+						<span>工作经验：1-3年</span>
+						<span>学历：本科</span>
+					</div>
+					<div class="k">15~30K/15薪</div>
+					<div class="right clearfix">
+						<div class="x">
+							<img src="images/xxn.png" >
+							<span>收藏</span>
+						</div>
+						<div class="gt">立即沟通</div>
+						
+						<div class="alert_ts">
+							<div class="tb">
+								<b>请你留言 <i></i> </b>
+								<img src="images/close.png" >
+							</div>
+							<div class="m">
+								<p class="js">很抱歉，工作日人工时间为：8:30-20:00（节假日8:30-19:00），非人工时间如需帮助请留下您的联系方式及需求，我们将尽快联系并解决您的问题</p>
+								<div class="li">
+									<b>问题描述</b>
+									<textarea rows="10" cols="10"></textarea>
+								</div>
+								<div class="li">
+									<b>电话</b>
+									<input type="text">
+								</div>
+								<div class="an">提交</div>
+							</div>
+							
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="m_c clearfix global_main">
+				<div class="left">
+					<div class="zw">
+						<div class="t_title"> <b>职位描述</b> </div>
+						<div class="tags">
+							<span>市场运营内容</span>
+						</div>
+						<ul>
+							<li>
+								主要职责
+							</li>
+							<li>
+								1. 负责内部视频库整合。
+							</li>
+							<li>
+								2. 负责对外投放视频的视频运营。
+							</li>
+						</ul>
+					</div>
+					<div class="fl">
+						<div class="t_title"> <b>职位福利</b> </div>
+						<div class="tags">
+							<span>五险一金</span>
+							<span>年底双薪</span>
+							<span>绩效奖金</span>
+						</div>
+					</div>
+					<div class="addr">
+						<div class="t_title"> <b>工作地点</b> </div>
+						<p>天津和平区</p>
+						<img src="images/oimg/地图.png" >
+					</div>
+				</div>
+				
+				<div class="right">
+					<div class="fbz">
+						<div class="t_title"> <b>职位发布者</b> </div>
+						<div class="name clearfix">
+							<img src="images/index/jj.jpg" >
+							<b>侯子健/招聘经理</b>
+							<span>刚刚活跃</span>
+						</div>
+						<div class="gts clearfix">
+							<img src="images/index/hh.jpg" > 立即沟通
+						</div>
+						<img class="o" src="images/index/jj.jpg" >
+						<b class="z">中小企业咨询公司</b>
+						<p class="h">欢迎来到友聚四海！中小企业咨询公司是一家布局物联网、人工智能领域的前沿明星科技公司，始终坚持做“科技改变生活，服务创造价值”的品牌理念，让全球每个人都能享受科技带来的美好生活。我们秉持“做用户心中最酷的公...</p>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div id="fonter"></div>
+			
+			<script type="text/javascript" charset="UTF-8">
+				$("#header").load("./template/header.html")
+				$("#fonter").load("./template/fonter.html")
+				
+				$(".jss .right .gt").click(function(){
+					if($(".jss .right .alert_ts").css("display")=="none"){
+						$(".jss .right .alert_ts").css("display","block")
+					}else{
+						$(".jss .right .alert_ts").css("display","none")
+					}
+					
+				})
+				$(".jss .alert_ts img").click(function(){
+					$(".jss .alert_ts").css("display","none")
+				})
+			</script>
+		</div>
+	</body>
+</html>

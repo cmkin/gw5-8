@@ -1,0 +1,83 @@
+<div class="g_header clearfix">
+	<div class="global_main clearfix">
+		<div class="h_l clearfix">
+			<a href="index.html" class="clearfix">
+				<img src="./images/news/logo.png" >
+				<!-- <div class="r">
+					<b>天津港保税区</b>
+					<p>中小企业创新创业服务平台</p>
+				</div> -->
+			</a>
+		</div>
+		<div class="h_c">
+			<ul class="clearfix">
+				<li>
+					<a  href="policy.html">政策专栏</a>
+				</li>
+				<li>
+					<a  href="accommodation.html">企业融通</a>
+				</li>
+				<li>
+					<a href="union.html">产业联盟</a>
+				</li>
+				<li>
+					<a href="carrier.html">载体服务</a>
+				</li>
+				<li>
+					<a href="service.html">一站服务</a>
+				</li>
+				<li>
+					<a href="talents.html">招才引智</a>
+				</li>
+				<li>
+					<a href="investment.html">招商引资</a>
+				</li>
+				<li>
+					<a href="finance.html">金融服务</a>
+				</li>
+				<li>
+					<a href="enterprise.html">企业信息</a>
+				</li>
+			</ul>
+		</div>
+		<div class="h_r clearfix">
+			<!-- <div class="sc">
+				<input type="text" placeholder="入驻载体" name="" id="" value="" />
+				<img src="./images/index/search.png" >
+			</div> -->
+			<div class="btns">
+				<span>
+					<a href="register.html" style="color: #fff;">注册</a>
+				</span>
+				<span>
+					<a href="login.html" style="color: #fff;">登录</a>
+				</span>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(".g_header .h_c li a").removeClass("active")
+	$(".g_header .h_c li a").each(function(index,item){
+		if($(item).attr("href") && location.href.indexOf($(item).attr("href"))!=-1){
+			$(item).addClass("active")
+		}
+		
+	})
+	
+	
+	
+	if($(window).scrollTop()>=90){
+		$(".g_header").css("background","#C00000")
+	}else{
+		$(".g_header").css("background","none")
+	}
+	$(window).scroll(function(){
+		if($(window).scrollTop()>=90){
+			$(".g_header").css("background","#C00000")
+		}else{
+			$(".g_header").css("background","none")
+		}
+		
+	})
+</script>

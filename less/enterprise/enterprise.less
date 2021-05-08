@@ -1,0 +1,117 @@
+@import '../common.less';
+.enterprise{
+	.searchs{
+		width: 100%;
+		overflow: hidden;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.11);
+		.sc{
+			border: 1px solid rgba(178, 178, 178, 0.65);
+			border-radius: 8px;
+			position: relative;
+			input{
+				display: block;
+				width: 100%;
+				border: none;
+				padding: 15px 20px;
+				background: none;
+				outline: none;
+				font-size: 16px;
+			}
+			img{
+				position: absolute;
+				right: 20px;
+				top: 12px;
+				width: 25px;
+				height: 25px;
+				cursor: pointer;
+			}
+		}
+		.is{
+			padding-top: 20px;
+			position: relative;
+			padding-left: 90px;
+			span{
+				width: 90px;
+				position: absolute;
+				top: 25px;
+				left: 0;
+				font-size: 16px;
+				font-weight: 600;
+				color: #474545;
+			}
+			ul{
+				li{
+					float: left;
+					color: #7B7B7B;
+					font-size: 16px;
+					margin-right: 30px;
+					padding: 5px 15px;
+					border-radius: 20px;
+					cursor: pointer;
+					margin-bottom: 20px;
+				}
+				.active{
+					background-color: #E1EDFA;
+					color: #1671BA;
+				}
+			}
+		}
+	}
+	.qiyexinxi{
+		li{
+			float: left;
+			width: 32%;
+			background: #FFFFFF;
+			box-shadow: 0px 2px 22px 0px rgba(0, 0, 0, 0.07);
+			margin-bottom: 20px;
+			padding: 20px;
+			box-sizing: border-box;
+			.t{
+				padding-bottom: 20px;
+				overflow: hidden;
+				img{
+					width: 50px;
+					height: 50px;
+					float: left;
+					margin-right: 10px;
+				}
+				b{
+					color: #0F0F0F;
+					font-size: 24px;
+					padding-top: 10px;
+					display: block;
+					padding-left: 20px;
+				}
+			}
+			&>p{
+				font-size: 16px;
+				color: #888282;
+				margin-bottom: 15px;
+			}
+			.tags{
+				span{
+					background: #EAF3FF;
+					border-radius: 2px;
+					color: #3E6BDA;
+					display: inline-block;
+					padding: 3px 10px;
+					margin-right: 10px;
+				}
+			}
+		}
+		li:nth-child(3n-1){
+			margin: 0 2%;
+		}
+		
+		.more{
+			padding: 20px;
+			text-align: center;
+			img{
+				cursor: pointer;
+				width: 154px;
+			}
+		}
+	}
+	
+}

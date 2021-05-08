@@ -1,0 +1,263 @@
+@import '../common.less';
+.investment{
+	
+	
+	
+	.m_c{
+		
+		position: relative;
+		.left{
+			position: relative;
+			z-index: 10;
+			height: 800px;
+			background-color: #34456B;
+			color: #fff;
+			font-size: 16px;
+			width: 15%;
+			li{
+				padding: 40px 0;
+				text-align: center;
+				cursor: pointer;
+				transition: all 0.5s;
+			}
+			.active{
+				background: linear-gradient(221deg, #2F72FD 0%, #19C3FB 100%);
+			}
+		}
+		.right{
+			padding: 30px;
+			padding-left: 17%;
+			box-sizing: border-box;
+			position: absolute;
+			z-index: 2;
+			top: 20px;
+			left: 20px;
+			width:calc(100% - 40px);
+			background-color: #fff;
+			height:calc(100% - 40px);
+			.t{
+				font-size: 16px;
+				padding-bottom: 30px;
+				border-bottom: 1px solid rgba(151, 151, 151, 0.3);
+			}
+			.dw{
+				li{
+					padding: 20px 0;
+					border-bottom: 1px dashed  rgba(151, 151, 151, 0.5);
+					.b{
+						img{
+							width: 50px;
+							height: 50px;
+							float: left;
+							margin-right: 10px;
+						}
+						b{
+							color: #0F0F0F;
+							font-size: 24px;
+							padding-top: 7px;
+							display: inline-block;
+						}
+						a{
+							float: right;
+							color: #1FACFB;
+							font-size: 16px;
+							padding-top: 10px;
+						}
+					}
+					&>p{
+						color: #888282;
+						font-size: 16px;
+						padding-top: 10px;
+					}
+				}
+			
+			}
+			
+			.c_tabs{
+				display: none;
+				padding-top: 30px;
+				li{
+					float: left;
+					margin-right: 30px;
+					color: #908A8A;
+					font-size: 16px;
+					cursor: pointer;
+					i{
+						display: block;
+						width: 63px;
+						height: 6px;
+						background: #2CB0FB;
+						border-radius: 3px;
+						margin-top: 3px;
+						opacity: 0;
+					}
+				}
+				.active{
+					color: #2CB0FB;
+					i{
+						opacity: 1;
+					}
+				}
+			}
+			
+			.zc{
+				li{
+					padding: 20px 0;
+					border-bottom: 1px dashed  rgba(151, 151, 151, 0.5);
+					.b{
+						b{
+							color: #0F0F0F;
+							font-size: 24px;
+							padding-top: 7px;
+							display: inline-block;
+						}
+						a{
+							float: right;
+							color: #1FACFB;
+							font-size: 16px;
+							padding-top: 10px;
+						}
+					}
+					.time{
+						padding-top: 15px;
+						font-size: 16px;
+					}
+					.imgs{
+						display: none;
+						padding-top: 20px;
+						img{
+							float: left;
+							width: 30%;
+							height: 220px;
+						}
+						img:nth-child(3n-1){
+							margin: 0 5%;
+						}
+					}
+					&>p{
+						color: #888282;
+						font-size: 16px;
+						padding-top: 10px;
+					}
+					.k{
+						padding-top: 15px;
+						img{
+							position: relative;
+							top: 5px;
+							margin-right: 5px;
+						}
+					}
+				}
+							
+			}
+			
+			.zc_wrap{
+				max-height: 95%;
+				overflow-y: auto;
+			}
+			
+			.gy{
+				li{
+					font-size: 16px;
+					color: #888282;
+					padding: 10px 0;
+					position: relative;
+					min-height: 20px;
+					padding-left: 80px;
+					span{
+						position: absolute;
+						top: 10px;
+						left: 0;
+						width: 80px;
+					}
+				}
+			}
+			.bsqxc{
+				padding-top: 10px;
+				li{
+					padding: 10px 0;
+					position: relative;
+					span{
+						position: absolute;
+						left: 0;
+						top: 10px;
+						color: #0F0F0F;
+						font-size: 16px;
+						width: 90px;
+					}
+					p{
+						padding-left: 90px;
+						font-size: 16px;
+						text-overflow: -o-ellipsis-lastline;
+						  overflow: hidden;
+						  text-overflow: ellipsis;
+						  display: -webkit-box;
+						  -webkit-line-clamp: 2;
+						  line-clamp: 2;
+						  -webkit-box-orient: vertical;
+					}
+				}
+				.igs{
+					img{
+						float: left;
+						width: 30%;
+						height: 220px;
+					}
+					img:nth-child(3n-1){
+						margin: 0 5%;
+					}
+				}
+			}
+			.gx{
+				li{
+					padding: 20px 0;
+					border-bottom: 1px dashed  rgba(151, 151, 151, 0.5);
+					.b{
+						font-size: 16px;
+						b{
+							color: #0F0F0F;
+							
+							padding-top: 7px;
+							display: inline-block;
+						}
+						a{
+							float: right;
+							color: #1FACFB;
+							font-size: 16px;
+							padding-top: 10px;
+						}
+					}
+					&>p{
+						padding-top: 20px;
+						font-size: 16px;
+					}
+					.is{
+						font-size: 16px;
+						display: flex;
+						padding-top: 20px;
+						span{
+							flex: 1;
+						}
+						span:last-child{
+							text-align: right; 
+						}
+					}
+				}
+			}
+			
+		}
+	}
+	
+	
+	.zsb{
+		padding: 0 20px;
+		margin-bottom: 50px;
+		img{
+			display: block;
+			width: 100%;
+			height: 130px;
+		}
+	}
+	
+	
+}
